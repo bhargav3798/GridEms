@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 15fr 80fr 5fr;
+  grid-template-rows: 10fr 90fr;
+}
+div {
+  display: block;
+}
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: green;
+}
+.toolbar {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.links-sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: #1d2433;
+}
+.links-sidebar .company-title {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1451px) {
+  .links-sidebar .company-title img {
+    /* For big monitors */
+    padding: 2em;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1450px) {
+  .links-sidebar .company-title img {
+    /* For big laptops */
+    padding: 1em 2em;
+  }
+}
+.links-sidebar .links p {
+  font-family: "Inter";
+  color: grey;
+  padding-left: 2em;
+}
+.links-sidebar .links .link-section .link-group {
+  padding-left: 2em;
+}
+.links-sidebar .link-element {
+  display: flex;
+  align-items: end;
+  padding: 0.5em;
+}
+.links-sidebar .link-element:hover {
+  padding: 0.5em 2em;
+  background-color: yellow;
+}
+.links-sidebar .link-element:hover img {
+  filter: invert(0%);
+}
+.links-sidebar .link-element:hover a {
+  color: black;
+}
+.links-sidebar .link-element img {
+  height: 25px;
+  filter: invert(100%);
+  padding-right: 1em;
+}
+.links-sidebar .link-element a {
+  text-decoration: none;
+  font-family: "Inter";
+  color: white;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 2em;
+}
+.switch .input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch input:checked + .slider {
+  background-color: #2196F3;
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.container-main {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 10fr 12fr 5fr 58fr 15fr;
+}
+.switch-container {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox {
+  border: 0 1px 1px 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.textbox .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.textbox .text .first {
+  font-family: "Inter";
+  font-size: 0.9em;
+}
+.textbox .text .first p {
+  color: rgba(0, 0, 0, 0.8);
+}
+.textbox .text .second {
+  font-family: "Inter";
+  font-weight: 700;
+}
+.textbox .updownimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox .updownimage img {
+  height: 50px;
+}
+.yellow {
+  background-color: yellow;
+  padding: 0 0.25rem;
+}
+.circle-links {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  display: flex;
+  justify-content: space-evenly;
+}
+.circle-links .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-links .img img {
+  border-radius: 30px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.circle-links .img-yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-links .img-yellow img {
+  border-radius: 30px;
+  padding: 1em;
+  background-color: yellow;
+}
+.toolbar {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.toolbar .toolbar-items {
+  height: 40vh;
+  padding: 2em;
+  display: grid;
+  grid-template-rows: 20fr 80fr;
+}
+.toolbar .toolbar-items .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.toolbar .toolbar-items .items .img img {
+  border-radius: 35px;
+  padding: 1em;
+  background-color: #ccc;
+}
+.toolbar .toolbar-items .items p {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.9em;
+}
+/* Make changes here for templatefiles*/
+.main {
+  display: flex;
+}
