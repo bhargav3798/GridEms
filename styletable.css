@@ -1,0 +1,126 @@
+
+
+/* .card-body{
+    /* width: 608.75px;
+    height: 368px; */
+    /* padding: 3rem 28rem; */
+        
+/* } */ 
+table{
+    /* border-spacing: 30px; */
+    /* border-collapse: seperate; */
+    border-spacing: 16px;
+    border-collapse: separate;
+    /* background-size: contain; */
+    /* to fix positioning of table */
+    table-layout: fixed;
+    width: 100%;
+    overflow-x :auto;
+    
+}
+.table-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+}
+
+
+
+h5{
+    font-family: 'Inter';
+    font-weight: 700;
+    size: 5px;
+    color: #045550;
+    height: 16.94px;
+    padding: 20px;
+}
+
+#pipeline-heading{
+    font-family: "Inter";
+}
+
+.btn-group{
+    top: 5px;
+    /* left: 34px; */
+    padding: 10px;
+}
+#dropdown-m{
+    size: 10px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+/* th{
+    font-family: "Inter";
+    font-weight: 500;
+    size: 10px;
+    color: #3B7471;
+    line-height: 12.1px;
+     /* padding: 1.5rem 2.5rem; */
+/* }  */ 
+
+th{
+    font-family: "Inter";
+    font-weight: 500;
+    /* size: 6px; */
+    color: #3B7471;
+    line-height: 12.1px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+
+td{
+    font-family: "Inter";
+    font-weight: 600;
+    /* size: 5px; */
+    line-height: 9.68px;
+    padding: 14px;
+    font-size: 0.7em;
+    
+    text-align: left;
+    color: #595959;
+    /* padding :  15px; */
+       
+}
+
+/* h4{
+    display: flex;
+    flex-direction: column;  
+} */
+
+
+
+
+
+ td:last-child#cell1{
+    background-color: #3B7471;
+    ;
+}
+
+td#cell1{
+    background-color: #98B4B1;
+}
+td#cell2{
+    background-color: #FEC37E;
+}
+
+td#cell3{
+    background-color: #DFB8E2;
+}
+td#cell4{
+    background-color: #A6E7E2;
+}
+td#cell5{
+    background-color: #A7C78D;
+}
+
+/* td:has(td:empty)
+{
+    background-color: #E6EDED !important;
+} */
+
+/*   */
+
+
